@@ -1,0 +1,100 @@
+const knownBotUserAgents = [
+  'Googlebot',                // Google Search Bot
+  'Bingbot',                  // Bing Search Bot
+  'Slurp',                    // Yahoo Search Bot
+  'DuckDuckBot',              // DuckDuckGo Search Bot
+  'Baiduspider',              // Baidu Search Bot
+  'YandexBot',                // Yandex Search Bot
+  'Sogou',                    // Sogou Search Bot
+  'Exabot',                   // Exalead Search Bot
+  'facebookexternalhit',      // Facebook Link Preview
+  'facebot',                  // Facebook Crawler
+  'ia_archiver',              // Alexa Archiver
+  'Discordbot/2.0',           // Discord Link Preview Bot
+  'Cloudflare',               // Cloudflare Crawler
+  'Pinterestbot',             // Pinterest Crawler
+  'Applebot',                 // Apple Search Bot
+  'LinkedInBot',              // LinkedIn Crawler
+  'WhatsApp',                 // WhatsApp Link Preview
+  'TelegramBot',              // Telegram Link Preview
+  'Slackbot',                 // Slack Link Preview
+  'Twitterbot',               // Twitter Crawler
+  'Instagram',                // Instagram Crawler
+  'SemrushBot',               // SEMrush SEO Crawler
+  'AhrefsBot',                // Ahrefs SEO Crawler
+  'MJ12bot',                  // Majestic-12 SEO Crawler
+  'SeznamBot',                // Seznam.cz Search Bot
+  'DotBot',                   // Moz SEO Crawler
+  'PetalBot',                 // Petal Search Bot
+  'UptimeRobot',              // Uptime Monitoring Bot
+  'Site24x7',                 // Site24x7 Monitoring Bot
+  'Google-Structured-Data-Testing-Tool', // Google's Structured Data Testing Tool
+  'Google-AMPHTML',           // Google AMP Cache Crawler
+  'Google-Podcast',           // Google Podcast Crawler
+  'Google-Image-Proxy',       // Google Image Proxy
+  'Mediapartners-Google',     // Google Adsense Bot
+  'AdsBot-Google',            // Google Ads Bot
+  'AdsBot-Google-Mobile',     // Google Mobile Ads Bot
+  'Baiduspider-image',        // Baidu Image Search Bot
+  'Baiduspider-video',        // Baidu Video Search Bot
+  'Google-Site-Verification', // Google Site Verification Bot
+  'DuckDuckBot-Https',        // DuckDuckGo Secure Bot
+  'Google-Favicon',           // Google Favicon Bot
+  'Yahoo! Slurp China',       // Yahoo Search China Bot
+  'Yeti',                     // Naver Search Bot
+  'Screaming Frog SEO Spider', // SEO Spider Tool
+  'Google-Read-Aloud',        // Google Read Aloud Bot
+  'W3C_Validator',            // W3C Validator
+  'FacebookPlatform',         // Facebook Platform Scraper
+  'CCBot',                    // Common Crawl Bot
+  'ZoominfoBot',              // Zoominfo Crawler
+  'Apple-News',               // Apple News Bot
+  'Google-PageSpeed',         // Google PageSpeed Insights
+  'Pingdom',                  // Pingdom Monitoring Bot
+  'Alexa',                    // Alexa Bot
+  'TwitterImageProxy',        // Twitter Image Proxy
+  'BingPreview',              // Bing Preview Bot
+  'Qwantify',                 // Qwant Search Bot
+  'GrapeshotCrawler',         // Grapeshot Crawler (Oracle)
+  'YisouSpider',              // Yisou Search Bot
+  'SearchmetricsBot',         // Searchmetrics SEO Crawler
+  'Bytespider',               // ByteDance Bot (TikTok)
+  'SentiBot',                 // SentiBot Sentiment Analysis Bot
+  'A6-Indexer',               // Ahrefs Crawler
+  'WhatsApp/2.19',            // WhatsApp Crawler
+  'Checkmark Network',        // Checkmark Network Bot
+  'LinkChecker',              // Link Checker Bots
+  'Google-Health',            // Google Health Bot
+  'DotBot',                   // Dot Bot (SEO Tool)
+  'Google-Mobile',            // Google Mobile Bot
+  'Trident',                  // Microsoft Internet Explorer Rendering Engine (sometimes identified as bot)
+  'HubSpot',                  // HubSpot Marketing Bot
+  'MojeekBot',                // Mojeek Search Engine Bot
+  'SMTBot',                   // SMBot SEO Tool
+  'WeChatbot',                // WeChat Link Preview Bot
+  'BLEXBot',                  // SEO Crawler Bot
+  'Fandango',                 // Fandango Bot
+  'Yisou',                    // Chinese Search Engine
+  'Yahoo Japan',              // Yahoo Japan Search Engine
+  'Alibaba',                  // Alibaba Crawler
+  'Samsungscraper',           // Samsung Scraper Bot
+  'Google-Lighthouse',        // Google Lighthouse SEO Tool
+  'Monitor.Us',               // Monitoring Service
+  'BrandVerity',              // Brand Monitoring Service
+  'ShortLinkVerifier',        // ShortLink Verification Service
+  'Google-Transparency-Report', // Google Transparency Report Bot
+  'Nagios',                   // Nagios Monitoring Bot
+  'MicroMessenger',           // WeChat Bot
+  'GoogleSecurityScanner',    // Google Security Scanner Bot
+  'Cisco Umbrella',           // Cisco Umbrella Security Bot
+  'Smartlinkbot',             // SmartLink Bot
+  'Zgrab',                    // Zgrab Security Scanner
+  'Googlebot-Image',          // Google Image Bot
+  'Screener',                 // Screener Bot
+  'Go-http-client',           // Go HTTP Client Library (sometimes used by bots)
+  'CensysInspect',            // Censys Network Scanning Bot
+  'Caliperbot',               // Network Scanning Bot
+  'AwarioBot',                // Awario Social Listening Bot
+  'uptimerobot',              // Uptime Monitoring Bot
+  'checkmark',                // Network Security Bot
+];
